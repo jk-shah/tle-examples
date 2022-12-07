@@ -1,0 +1,6 @@
+# demo extension
+comment = 'Demo Extension for Postgres Conference'
+default_version = '1.0'
+module_pathname = '$libdir/demo'
+relocatable = true
+

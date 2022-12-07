@@ -1,0 +1,22 @@
+This repo shows examples of developing PostgreSQL extensions along with making them useful with 
+Trusted Language Extensions ( https://github.com/aws/pg_tle )
+The assumption is the target database has created the pg_tle extension and 
+the user has been granted the pgtle_admin role which allows  them to create the extensions.
+
+This repo intents to help learn about developing extensions for PostgreSQL universally and hence 
+it attempts to provide examples keeping the same look and feel of PostgreSQL extensions typically
+developed in C language.
+
+The main logic is stored in pgtle.mk file which is designed to be activated using
+USE_PGTLE=1 and helps to install, test the extension and also uninstall the extension using pg_tle.
+
+Also to enable building it remotely copy the env.ini to env in the same directory and 
+modify locations to your setup
+
+Examples of usage:
+
+Install using `make USE_PGTLE=1 install' to install to a target PostgreSQL database with pg_tle activated.
+
+This repo consists of demo extensions to help developers to clone and start their own extensions rapidly also.
+
+
