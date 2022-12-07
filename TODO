@@ -1,0 +1,4 @@
+1. Makefile to support automatically installing all files of form *--*.sql (not upgrade path) via pg_tle
+2. Makefile to support adding upgrade paths of all files of form *--*--*.sql via pg_tle
+3. Makefile to mark default extension version 
+
